@@ -19,13 +19,46 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="768"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uGh-AS-7WU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="uGh-AS-7WU" customClass="ListTableViewCell" customModule="FirebaseChatApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uGh-AS-7WU" id="d2R-8n-NYd">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7b-eL-Ox3">
+                                                    <rect key="frame" x="20" y="0.0" width="13" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COntent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-Io-eNY">
+                                                    <rect key="frame" x="20" y="22.5" width="65" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-Oa-WqT">
+                                                    <rect key="frame" x="365.5" y="27.5" width="28.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="kaY-Io-eNY" secondAttribute="bottom" id="HOb-MY-WU7"/>
+                                                <constraint firstItem="j7b-eL-Ox3" firstAttribute="top" secondItem="d2R-8n-NYd" secondAttribute="top" id="Hxu-1Y-xyy"/>
+                                                <constraint firstAttribute="trailing" secondItem="xTZ-Oa-WqT" secondAttribute="trailing" constant="20" id="P6g-lD-lHx"/>
+                                                <constraint firstItem="j7b-eL-Ox3" firstAttribute="leading" secondItem="d2R-8n-NYd" secondAttribute="leading" constant="20" id="Pu8-o4-6jD"/>
+                                                <constraint firstItem="kaY-Io-eNY" firstAttribute="leading" secondItem="d2R-8n-NYd" secondAttribute="leading" constant="20" id="YvD-93-lLy"/>
+                                                <constraint firstAttribute="bottom" secondItem="xTZ-Oa-WqT" secondAttribute="bottom" id="dq6-ik-O4r"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentTextLabel" destination="kaY-Io-eNY" id="jDf-il-Kvk"/>
+                                            <outlet property="dateTextLabel" destination="xTZ-Oa-WqT" id="rON-gr-EOa"/>
+                                            <outlet property="idTextLabel" destination="j7b-eL-Ox3" id="2px-iX-LfQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -43,6 +76,9 @@
                                             <constraint firstAttribute="height" constant="30" id="ckD-YX-OtH"/>
                                             <constraint firstAttribute="width" constant="30" id="uef-Dz-MF7"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchPostButton:" destination="gf8-6n-vgu" eventType="touchUpInside" id="zz8-A7-eoe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -70,6 +106,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G6J-Es-eN5"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vIw-em-d5S" id="2SV-pU-XhB"/>
+                        <outlet property="textField" destination="dbo-KA-sRz" id="VzH-1O-KyS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON5-RH-XMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
