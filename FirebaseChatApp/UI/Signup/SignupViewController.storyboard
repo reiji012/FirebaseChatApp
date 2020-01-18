@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RAI-gt-UKE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qhY-do-2gj">
+            <objects>
+                <navigationController id="RAI-gt-UKE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mpO-32-Hck">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VJM-du-BNY" kind="relationship" relationship="rootViewController" id="Ck0-Vx-Pr9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9a-Vd-ALE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-974" y="117"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="gC6-0b-73I">
+            <objects>
+                <viewController id="VJM-du-BNY" customClass="SignupViewController" customModule="FirebaseChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7En-IG-2Hg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMD-h7-q9B">
+                                <rect key="frame" x="20" y="188" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-WH-WOi">
+                                <rect key="frame" x="20" y="272" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx2-wC-pEM">
+                                <rect key="frame" x="180" y="356" width="54" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="touchSignupButton:" destination="VJM-du-BNY" eventType="touchUpInside" id="1fb-cp-2As"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-8V-hUp">
+                                <rect key="frame" x="188" y="436" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="touchLoginButton:" destination="VJM-du-BNY" eventType="touchUpInside" id="xFn-aL-Bn8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ODm-8V-hUp" firstAttribute="top" secondItem="Cx2-wC-pEM" secondAttribute="bottom" constant="50" id="A0S-ZX-NNo"/>
+                            <constraint firstItem="RE9-cT-YKu" firstAttribute="trailing" secondItem="TMD-h7-q9B" secondAttribute="trailing" constant="20" id="HWf-T4-ZJW"/>
+                            <constraint firstItem="TMD-h7-q9B" firstAttribute="centerX" secondItem="7En-IG-2Hg" secondAttribute="centerX" id="Pg5-LO-2YX"/>
+                            <constraint firstItem="TMD-h7-q9B" firstAttribute="leading" secondItem="RE9-cT-YKu" secondAttribute="leading" constant="20" id="SUK-27-IoN"/>
+                            <constraint firstItem="Cx2-wC-pEM" firstAttribute="top" secondItem="FqO-WH-WOi" secondAttribute="bottom" constant="50" id="U5u-1a-yEI"/>
+                            <constraint firstItem="FqO-WH-WOi" firstAttribute="top" secondItem="TMD-h7-q9B" secondAttribute="bottom" constant="50" id="q4a-v0-WFV"/>
+                            <constraint firstItem="RE9-cT-YKu" firstAttribute="trailing" secondItem="FqO-WH-WOi" secondAttribute="trailing" constant="20" id="rdS-EW-FtJ"/>
+                            <constraint firstItem="Cx2-wC-pEM" firstAttribute="centerX" secondItem="7En-IG-2Hg" secondAttribute="centerX" id="uls-5t-uQp"/>
+                            <constraint firstItem="FqO-WH-WOi" firstAttribute="leading" secondItem="RE9-cT-YKu" secondAttribute="leading" constant="20" id="xbz-KE-Rh7"/>
+                            <constraint firstItem="TMD-h7-q9B" firstAttribute="top" secondItem="RE9-cT-YKu" secondAttribute="top" constant="100" id="xm4-CM-ewB"/>
+                            <constraint firstItem="ODm-8V-hUp" firstAttribute="centerX" secondItem="7En-IG-2Hg" secondAttribute="centerX" id="zJP-KX-YaS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RE9-cT-YKu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SignUp" id="Bm9-Hf-UeX"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="TMD-h7-q9B" id="fyN-nd-xig"/>
+                        <outlet property="passwordTextField" destination="FqO-WH-WOi" id="klc-Ir-Cn8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NT5-bM-keW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="117"/>
+        </scene>
+    </scenes>
+</document>
