@@ -14,7 +14,6 @@
 		8E91571E23D2F62400C4EB78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E91571C23D2F62400C4EB78 /* LaunchScreen.storyboard */; };
 		8E91572923D2F62500C4EB78 /* FirebaseChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91572823D2F62500C4EB78 /* FirebaseChatAppTests.swift */; };
 		8E91573423D2F62500C4EB78 /* FirebaseChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91573323D2F62500C4EB78 /* FirebaseChatAppUITests.swift */; };
-		8E91574223D2F79400C4EB78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E91574123D2F79400C4EB78 /* GoogleService-Info.plist */; };
 		8E91574923D3078700C4EB78 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91574823D3078700C4EB78 /* UIStoryboardExtensions.swift */; };
 		8E91574B23D307D400C4EB78 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91574A23D307D400C4EB78 /* SignupViewController.swift */; };
 		8E91574D23D307DE00C4EB78 /* SignupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E91574C23D307DE00C4EB78 /* SignupViewController.storyboard */; };
@@ -27,6 +26,7 @@
 		8E91575B23D30E9200C4EB78 /* ListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91575A23D30E9200C4EB78 /* ListViewPresenter.swift */; };
 		8ECCFF1323D34D40006FC1EC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCFF1223D34D40006FC1EC /* ListTableViewCell.swift */; };
 		8ECCFF1523D35FF4006FC1EC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCFF1423D35FF4006FC1EC /* ListViewModel.swift */; };
+		8EF2570C23D36B6D00559EA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EF2570B23D36B6D00559EA1 /* GoogleService-Info.plist */; };
 		A0CF115F76CFD14163F46BBA /* Pods_FirebaseChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8FE498DC271AA054F25D3B /* Pods_FirebaseChatAppUITests.framework */; };
 		E95C13B9339C82FF129F6A9F /* Pods_FirebaseChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935EEC953C9F8A89CBFE2BF5 /* Pods_FirebaseChatAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,6 @@
 		8E91572F23D2F62500C4EB78 /* FirebaseChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E91573323D2F62500C4EB78 /* FirebaseChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseChatAppUITests.swift; sourceTree = "<group>"; };
 		8E91573523D2F62500C4EB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E91574123D2F79400C4EB78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E91574823D3078700C4EB78 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtensions.swift; path = ../../../ticketTask/TicketTask/Extention/UIStoryboardExtensions.swift; sourceTree = "<group>"; };
 		8E91574A23D307D400C4EB78 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		8E91574C23D307DE00C4EB78 /* SignupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignupViewController.storyboard; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		8E91575A23D30E9200C4EB78 /* ListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewPresenter.swift; sourceTree = "<group>"; };
 		8ECCFF1223D34D40006FC1EC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		8ECCFF1423D35FF4006FC1EC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8EF2570B23D36B6D00559EA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		935EEC953C9F8A89CBFE2BF5 /* Pods_FirebaseChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B964A16F13ABE63052EA74D3 /* Pods-FirebaseChatAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChatAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseChatAppUITests/Pods-FirebaseChatAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4A9221A0AC6235F9519531E /* Pods_FirebaseChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				8E91571023D2F62100C4EB78 /* FirebaseChatApp */,
-				8E91574123D2F79400C4EB78 /* GoogleService-Info.plist */,
 				8E91572723D2F62500C4EB78 /* FirebaseChatAppTests */,
 				8E91573223D2F62500C4EB78 /* FirebaseChatAppUITests */,
 				8E91570F23D2F62100C4EB78 /* Products */,
@@ -154,6 +153,7 @@
 				8E91571A23D2F62400C4EB78 /* Assets.xcassets */,
 				8E91571C23D2F62400C4EB78 /* LaunchScreen.storyboard */,
 				8E91571F23D2F62400C4EB78 /* Info.plist */,
+				8EF2570B23D36B6D00559EA1 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseChatApp;
 			sourceTree = "<group>";
@@ -196,19 +196,6 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
-		8E91574523D3034E00C4EB78 /* LIst */ = {
-			isa = PBXGroup;
-			children = (
-				8E91575823D30E7F00C4EB78 /* ListViewController.storyboard */,
-				8E91575623D30E7400C4EB78 /* ListViewController.swift */,
-				8ECCFF1423D35FF4006FC1EC /* ListViewModel.swift */,
-				8E91575A23D30E9200C4EB78 /* ListViewPresenter.swift */,
-				8ECCFF1223D34D40006FC1EC /* ListTableViewCell.swift */,
-			);
-			name = LIst;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		8E91574623D3038A00C4EB78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,11 +209,23 @@
 			children = (
 				8E91571123D2F62100C4EB78 /* AppDelegate.swift */,
 				8E91571323D2F62100C4EB78 /* SceneDelegate.swift */,
+				8EF2570A23D36AEF00559EA1 /* List */,
 				8E91574423D3031F00C4EB78 /* Signup */,
 				8E91574323D302DF00C4EB78 /* Login */,
-				8E91574523D3034E00C4EB78 /* LIst */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		8EF2570A23D36AEF00559EA1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8E91575823D30E7F00C4EB78 /* ListViewController.storyboard */,
+				8E91575623D30E7400C4EB78 /* ListViewController.swift */,
+				8ECCFF1423D35FF4006FC1EC /* ListViewModel.swift */,
+				8E91575A23D30E9200C4EB78 /* ListViewPresenter.swift */,
+				8ECCFF1223D34D40006FC1EC /* ListTableViewCell.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		DBD394183528EEFAD4452494 /* Pods */ = {
@@ -352,10 +351,10 @@
 			files = (
 				8E91574D23D307DE00C4EB78 /* SignupViewController.storyboard in Resources */,
 				8E91571E23D2F62400C4EB78 /* LaunchScreen.storyboard in Resources */,
-				8E91574223D2F79400C4EB78 /* GoogleService-Info.plist in Resources */,
 				8E91575123D3081200C4EB78 /* LoginViewController.storyboard in Resources */,
 				8E91575923D30E7F00C4EB78 /* ListViewController.storyboard in Resources */,
 				8E91571B23D2F62400C4EB78 /* Assets.xcassets in Resources */,
+				8EF2570C23D36B6D00559EA1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
